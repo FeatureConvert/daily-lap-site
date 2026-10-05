@@ -1,13 +1,17 @@
+/* The game's own fonts, served from this site (no font service is asked, so no visitor's address
+   goes anywhere else). Both are under the SIL Open Font License: fonts/LICENSES.md. */
+@font-face { font-family: 'Lilita One'; src: url('fonts/LilitaOne-Regular.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'Nunito'; font-weight: 900; src: url('fonts/Nunito-Black.ttf') format('truetype'); font-display: swap; }
 :root { --ink: #33294D; --soft: #736B8C; --kerb: #E5453C; --paper: #FCFAFF; --sky: #BFE7FF; --grass: #CDEFC0; }
 * { box-sizing: border-box; }
-body { margin: 0; font: 400 18px/1.6 'Nunito', system-ui, sans-serif; color: var(--ink);
+body { margin: 0; font: 400 18px/1.6 system-ui, -apple-system, sans-serif; color: var(--ink);
   background: linear-gradient(180deg, var(--sky), var(--grass)) fixed; }
 main { max-width: 720px; margin: 32px auto; padding: 28px 24px 40px; background: var(--paper);
   border-radius: 28px; box-shadow: 0 10px 30px rgba(51, 41, 77, .15); }
 @media (max-width: 760px) { main { margin: 16px; } }
 h1 { font: 400 40px/1.1 'Lilita One', sans-serif; margin: 0 0 6px; }
 h2 { font: 400 26px/1.2 'Lilita One', sans-serif; color: var(--kerb); margin: 28px 0 6px; }
-h3 { font-weight: 900; font-size: 19px; margin: 18px 0 2px; }
+h3 { font-family: 'Nunito', system-ui, sans-serif; font-weight: 900; font-size: 19px; margin: 18px 0 2px; }
 .meta { color: var(--soft); margin: 0 0 18px; }
 .lead { font-weight: 700; font-size: 20px; }
 a { color: #2F6FD6; }
